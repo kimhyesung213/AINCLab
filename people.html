@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AINCL Homepage</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md bg-info navbar-dark fixed-top">
+        <div class="container">
+          <a href="index" class="navbar-brand text-white">
+            <div class="container">
+                <img src="images/logo2.png" alt="로고" style="height: 40px;" class="logoImg">
+            </div>
+          </a>
+  
+          <button class="navbar-toggler" type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#nav-menu" 
+            aria-controls="nav-menu" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="nav-menu">
+            <ul class="navbar-nav ms-auto my-2">
+              <li class="nav-item"><a class="nav-link text-dark fw-bold" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link text-dark fw-bold" href="people.html">People</a></li>
+              <li class="nav-item"><a class="nav-link text-dark fw-bold" href="research.html">Research</a></li>
+              <li class="nav-item"><a class="nav-link text-dark fw-bold" href="Project.html">Project</a></li> 
+              <li class="nav-item"><a class="nav-link text-dark fw-bold" href="publication.html">Publication</a></li>
+              <li class="nav-item"><a class="nav-link text-dark fw-bold" href="Facilities.html">Facilities</a></li>
+              <li class="nav-item"><a class="nav-link text-dark fw-bold" href="news.html">News</a></li>
+              <li class="nav-item"><a class="nav-link text-dark fw-bold" href="Contact.html">Contact</a></li>              
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <section class="mt-5 py-5 px-1">
+        <div class="container px-1 border-bottom border-2 border-dark pb-5 mb-5">
+            <h2 class="text-dark fw-bold pb-2 text-h2-responsive">Professor</h2>            
+            <div class="card mx-5">
+                <div class="row">
+                    <div class="col-md-5 col-lg-3 col-xl-3 col-xxl-2">
+                        <img src="images/cjchun.jpg" class="card-img-top" alt="cjchun">
+                    </div>
+
+                    <div class="col-md-7 col-lg-9 col-xl-9 col-xxl-10">
+                        <div class="card-body">
+                            <h5 class="card-title text-h5-responsive">전 찬 준 (Chanjun Chun, Ph.D)</h5>
+                            <ul>
+                                <li class="card-text text-p-responsive">조선대학교 컴퓨터공학과 조교수 (since Spring 2021)</li>
+                                <li class="card-text text-p-responsive">Office : IT융합대학 10120</li>
+                                <li class="card-text text-p-responsive">Tel : +82-62-230-7736</li>
+                                <li class="card-text text-p-responsive">E-mail : cjchun@chosun.ac.kr</li>
+                            </ul>                            
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#bioModal">
+                                Biography
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="bioModal" tabindex="-1" aria-labelledby="bioModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-4" id="bioModalLabel">Biography</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h2 class="modal-title fs-5 py-2">Education</h2>
+                                        <ul>
+                                            <li class="my-1">Ph.D. in School of Electrical Engineering and Computer Science, Gwagnju Institute of Science and Technology (GIST), Feb. 2017.</li>
+                                            <li class="my-1">M.S. in School of Information and Mechatronics, Gwagnju Institute of Science and Technology (GIST), Feb. 2011.</li>
+                                            <li class="my-1">B.S. in School of Information and Technology, Korea University of Education and Technology, Feb. 2009.</li>
+                                        </ul>
+                                        <hr>
+
+                                        <h2 class="modal-title fs-5 py-2">Work Experience</h2>
+                                        <ul>
+                                            <li class="my-1">Mar. 2021 ~ Present, Assistant Professor, Dept. of Computer Engineering, Chosun University, Korea.</li>
+                                            <li class="my-1">Jan. 2017 ~ Feb. 2021, Senior Researcher, Korea Insitute of Civil Engineering and Building Technology (KICT), Korea.</li> 
+                                        </ul>
+                                        <hr>
+
+                                        <h2 class="modal-title fs-5 py-2">Awards</h2>
+                                        <ul>
+                                            <li class="my-1">(2023) 광주광역시 시장상, 인공지능 산업생태계 조성 공로에 따른 표창</li>
+                                            <li class="my-1">(2023) 광주광역시 시장상, AICA K-디지털챌린지 AI 창업경진대회 최우수상</li>
+                                            <li class="my-1">(2023) 우수논문상, 한국전자파학회 동계학술대회</li>
+                                            <li class="my-1 fw-bold">(2021) IITP원장상, 2020 인공지능 그랜드 챌린지 - 음향인지 트랙에서 2위 수상</li>
+                                            <li class="my-1">(2020) 우수논문상, 한국스마트미디어학회 춘계학술대회</li>
+                                            <li class="my-1 fw-bold">(2019) 과기부장관상, 2019 인공지능 그랜드 챌린지 - 음향인지 트랙에서 1위 수상</li>
+                                            <li class="my-1">(2016) 우수논문상, 한국통신학회 하계학술대회</li>
+                                            <li class="my-1">(2015) 최우수논문상, 한국방송공학회 추계학술대회</li>
+                                            <li class="my-1">(2015) 3rd Place, A Best Paper Award in IEEE International Conference on Consumer Electronics (ICCE)</li> 
+                                        </ul>
+
+                                    </div>                           
+                                </div>
+                                </div>
+                            </div>
+
+
+
+                            
+                            <a href="https://scholar.google.co.kr/citations?user=XNWr0VoAAAAJ&hl=en" class="btn btn-outline-danger btn-sm" target="_blank">Google Scholar</a>
+                        </div>
+                    </div>
+                </div>                
+                
+            </div>
+        </div> 
+        
+        
+        <div class="container px-1 border-bottom border-2 border-dark pb-5 mb-5">
+            <h2 class="text-dark fw-bold pb-2 text-h2-responsive">MS Students</h2>            
+
+            <!-- 백지원 -->
+            <div class="card mx-5 mt-5">
+                <div class="row">
+                    <div class="col-md-5 col-lg-3 col-xl-3 col-xxl-2">
+                        <img src="images/jwbaek.jpg" class="card-img-top" alt="jwbaek">
+                    </div>
+
+                    <div class="col-md-7 col-lg-9 col-xl-9 col-xxl-10">
+                        <div class="card-body">
+                            <h5 class="card-title text-h5-responsive">백 지 원 (Jiwon Baek)</h5>
+                            <ul>
+                                <li class="card-text text-p-responsive">조선대학교 컴퓨터공학과 석사과정 (since Fall 2023)</li>
+                                <li class="card-text text-p-responsive">Office : IT융합대학 10122</li>                                
+                                <li class="card-text text-p-responsive">E-mail : qorwldnjs0@chosun.ac.kr</li>
+                                <li class="card-text text-p-responsive">Research Interests : Speech Recognition & Translation</li>
+                            </ul>   
+                            
+                            
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#biojwModal">
+                                Biography
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="biojwModal" tabindex="-1" aria-labelledby="biojwModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-4" id="biojwModalLabel">Biography</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h2 class="modal-title fs-5 py-2">Education</h2>
+                                        <ul>                                            
+                                            <li class="my-1">M.S. Student in Dept. of Computer Engineering, Chosun University.</li>
+                                            <li class="my-1">B.S. in Dept. of Computer Engineering, Chosun University, Feb. 2022.</li>
+                                        </ul>
+                                        <hr>
+
+                                    </div>                           
+                                </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>                
+            </div>
+
+            <!-- 박유정 -->
+            <div class="card mx-5 my-5">
+                <div class="row">
+                    <div class="col-md-5 col-lg-3 col-xl-3 col-xxl-2">
+                        <img src="images/yjpark.jpg" class="card-img-top" alt="yjpak">
+                    </div>
+
+                    <div class="col-md-7 col-lg-9 col-xl-9 col-xxl-10">
+                        <div class="card-body">
+                            <h5 class="card-title text-h5-responsive">박 유 정 (Yujeong Pak)</h5>
+                            <ul>
+                                <li class="card-text text-p-responsive">조선대학교 컴퓨터공학과 석사과정 (since Spring 2024)</li>
+                                <li class="card-text text-p-responsive">Office : IT융합대학 10122</li>                                
+                                <li class="card-text text-p-responsive">E-mail : pak01@chosun.ac.kr</li>
+                                <li class="card-text text-p-responsive">Research Interests : Diffusion-based Speech Enhancement</li>
+                            </ul>  
+                            
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#bioyjModal">
+                                Biography
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="bioyjModal" tabindex="-1" aria-labelledby="bioyjModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-4" id="bioyjModalLabel">Biography</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h2 class="modal-title fs-5 py-2">Education</h2>
+                                        <ul>          
+                                            <li class="my-1">M.S. Student in Dept. of Computer Engineering, Chosun University.</li>                                  
+                                            <li class="my-1">B.S. in Dept. of Computer Engineering, Chosun University, Feb. 2024.</li> 
+                                        </ul>
+                                        <hr>
+
+                                    </div>                           
+                                </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>                
+            </div>
+
+            <!-- 한혜주 -->
+            <div class="card mx-5 my-5">
+                <div class="row">
+                    <div class="col-md-5 col-lg-3 col-xl-3 col-xxl-2">
+                        <img src="images/hjhan.jpg" class="card-img-top" alt="hjhan">
+                    </div>
+
+                    <div class="col-md-7 col-lg-9 col-xl-9 col-xxl-10">
+                        <div class="card-body">
+                            <h5 class="card-title text-h5-responsive">한 혜 주 (Hyeju Han)</h5>
+                            <ul>
+                                <li class="card-text text-p-responsive">조선대학교 컴퓨터공학과 학석사연계과정 (since Fall 2024)</li>
+                                <li class="card-text text-p-responsive">Office : IT융합대학 10122</li>                                
+                                <li class="card-text text-p-responsive">E-mail : hyeju373@chosun.ac.kr</li>
+                                <li class="card-text text-p-responsive">Research Interests : Speech Synthesis</li>
+                            </ul>  
+                            
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#biohjModal">
+                                Biography
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="biohjModal" tabindex="-1" aria-labelledby="biohjModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-4" id="biohjModalLabel">Biography</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h2 class="modal-title fs-5 py-2">Education</h2>
+                                        <ul>          
+                                            <li class="my-1">B.S. Student in Dept. of Computer Engineering, Chosun University.</li>                                             
+                                        </ul>
+                                        <hr>
+
+                                        <h2 class="modal-title fs-5 py-2">Awards</h2>
+                                        <ul>                                            
+                                            <li class="my-1">(2024) 최우수상, SW중심대학 디지털경진대회 AI부문</li> 
+                                        </ul>
+                                    </div>                           
+                                </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div> 
+
+
+
+        <div class="container px-1 border-bottom border-2 border-dark pb-5 mb-5">
+            <h2 class="text-dark fw-bold pb-2">BS Students</h2>            
+            
+            <!-- 방채운  -->
+            <!-- <div class="card mx-5">
+                <div class="row">
+                    <div class="col-md-5 col-lg-3 col-xl-3 col-xxl-2">
+                        <img src="images/cwbang.jpg" class="card-img-top" alt="cwbang">
+                    </div>
+
+                    <div class="col-md-7 col-lg-9 col-xl-9 col-xxl-10">
+                        <div class="card-body">
+                            <h5 class="card-title text-h5-responsive">방 채 운 (Chae-Woon Bang)</h5>
+                            <ul>
+                                <li class="card-text text-p-responsive">조선대학교 컴퓨터공학과 학사과정 (since Spring 2017)</li>
+                                <li class="card-text text-p-responsive">Office : IT융합대학 10122</li>                                
+                                <li class="card-text text-p-responsive">E-mail : bcw4045@naver.com</li>
+                                <li class="card-text text-p-responsive">Research Interests : Speech Synthesis</li>
+                            </ul>      
+                            
+                            
+                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#biocwModal">
+                                Biography
+                            </button>
+                            
+                            
+                            <div class="modal fade" id="biocwModal" tabindex="-1" aria-labelledby="biocwModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-4" id="biocwModalLabel">Biography</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h2 class="modal-title fs-5 py-2">Education</h2>
+                                        <ul>                                            
+                                            <li class="my-1">B.S. Student in Dept. of Computer Engineering, Chosun University.</li>                                            
+                                        </ul>
+                                        <hr>
+
+                                        <h2 class="modal-title fs-5 py-2">Awards</h2>
+                                        <ul>                                            
+                                            <li class="my-1">(2021) 한밭대학교 드론 챔피언쉽 - 해커톤 분야 1위 (은상)</li> 
+                                        </ul>
+
+                                    </div>                           
+                                </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>                
+            </div> -->
+
+            <!-- 박화영 -->
+            <!-- <div class="card mx-5 my-5">
+                <div class="row">
+                    <div class="col-md-5 col-lg-3 col-xl-3 col-xxl-2">
+                        <img src="images/hypark.jpg" class="card-img-top" alt="hypark">
+                    </div>
+
+                    <div class="col-md-7 col-lg-9 col-xl-9 col-xxl-10">
+                        <div class="card-body">
+                            <h5 class="card-title text-h5-responsive">박 화 영 (Hwayoung Park)</h5>
+                            <ul>
+                                <li class="card-text text-p-responsive">조선대학교 컴퓨터공학과 학사과정 (since Spring 2020)</li>
+                                <li class="card-text text-p-responsive">Office : IT융합대학 10122</li>                                
+                                <li class="card-text text-p-responsive">E-mail : hhyy16924@naver.com</li>
+                                <li class="card-text text-p-responsive">Research Interests : Voice Conversion</li>
+                            </ul>                          
+                            
+                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#biohyModal">
+                                Biography
+                            </button>
+                            
+                            
+                            <div class="modal fade" id="biohyModal" tabindex="-1" aria-labelledby="biohyModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-4" id="biohyModalLabel">Biography</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h2 class="modal-title fs-5 py-2">Education</h2>
+                                        <ul>                                            
+                                            <li class="my-1">B.S. Student in Dept. of Computer Engineering, Chosun University.</li>                                            
+                                        </ul>
+                                        <hr>
+
+                                    </div>                           
+                                </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>                
+            </div> -->
+
+            <!-- 박현우 -->
+            <div class="card mx-5 mt-5">
+                <div class="row">
+                    <div class="col-md-5 col-lg-3 col-xl-3 col-xxl-2">
+                        <img src="images/hypark2.jpg" class="card-img-top" alt="hypark2">
+                    </div>
+
+                    <div class="col-md-7 col-lg-9 col-xl-9 col-xxl-10">
+                        <div class="card-body">
+                            <h5 class="card-title text-h5-responsive">박 현 우 (Hyunwoo Park)</h5>
+                            <ul>
+                                <li class="card-text text-p-responsive">조선대학교 컴퓨터공학과 학사과정 (since Spring 2021)</li>
+                                <li class="card-text text-p-responsive">Office : IT융합대학 10122</li>                                
+                                <li class="card-text text-p-responsive">E-mail : 20213120@chosun.ac.kr</li>
+                                <li class="card-text text-p-responsive">Research Interests : Sound Event Detection</li>
+                            </ul>      
+                            
+                            
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#biohy2Modal">
+                                Biography
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="biohy2Modal" tabindex="-1" aria-labelledby="biohy2ModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-4" id="biohy2ModalLabel">Biography</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h2 class="modal-title fs-5 py-2">Education</h2>
+                                        <ul>                                            
+                                            <li class="my-1">B.S. Student in Dept. of Computer Engineering, Chosun University.</li>                                            
+                                        </ul>
+                                        <hr>
+
+
+                                        <h2 class="modal-title fs-5 py-2">Work Experience</h2>
+                                        <ul>
+                                            <li class="my-1">Dec. 2017 ~ Jan. 2021, (주)태성산업 금형실 근무</li>                                            
+                                        </ul>
+                                        <hr>
+
+
+                                        <h2 class="modal-title fs-5 py-2">Awards</h2>
+                                        <ul>                                            
+                                            <li class="my-1">(2024) 최우수상, SW중심대학 디지털경진대회 AI부문</li> 
+                                            <li class="my-1">(2023) 광주창조경제혁신센터장상, 2023 광주창업페스티벌 창업버스킹</li> 
+                                            <li class="my-1">(2023) 광주광역시 시장상, 소셜벤쳐 경연대회</li> 
+                                            <li class="my-1">(2023) 3rd Place Enactus National Competition</li> 
+                                            <li class="my-1">(2023) 대상, 현대해상 씨앗프로그램</li> 
+                                            <li class="my-1">(2022) 우수상, 88로봇데이 SHARE Challenge 어드벤쳐 디자인부분</li> 
+                                            <li class="my-1">(2022) 최우수상, 로봇 공유 대학 AI 로봇 경진대회</li>      
+                                        </ul>
+                                    </div>                           
+                                </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>                
+            </div>
+
+            <!-- 정희란 -->
+            <div class="card mx-5 mt-5">
+                <div class="row">
+                    <div class="col-md-5 col-lg-3 col-xl-3 col-xxl-2">
+                        <img src="images/hrjeong.jpg" class="card-img-top" alt="hrjeong">
+                    </div>
+
+                    <div class="col-md-7 col-lg-9 col-xl-9 col-xxl-10">
+                        <div class="card-body">
+                            <h5 class="card-title text-h5-responsive">정 희 란 (Heeran Jeong)</h5>
+                            <ul>
+                                <li class="card-text text-p-responsive">조선대학교 컴퓨터공학과 학사과정 (since Spring 2021)</li>
+                                <li class="card-text text-p-responsive">Office : IT융합대학 10122</li>                                
+                                <li class="card-text text-p-responsive">E-mail : 0712hr@chosun.ac.kr</li>
+                                <li class="card-text text-p-responsive">Research Interests : Diffusion-based Generative AI</li>
+                            </ul>      
+                            
+                            
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#biohrModal">
+                                Biography
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="biohrModal" tabindex="-1" aria-labelledby="biohrModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-4" id="biohrModalLabel">Biography</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h2 class="modal-title fs-5 py-2">Education</h2>
+                                        <ul>                                            
+                                            <li class="my-1">B.S. Student in Dept. of Computer Engineering, Chosun University.</li>                                            
+                                        </ul>
+                                        <hr>
+
+                                        <h2 class="modal-title fs-5 py-2">Awards</h2>
+                                        <ul>                                            
+                                            <li class="my-1">(2024) 최우수상, SW중심대학 디지털경진대회 AI부문</li> 
+                                        </ul>
+                                    </div>                           
+                                </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>                
+            </div>
+
+            <!-- 김성준 -->
+            <div class="card mx-5 mt-5">
+                <div class="row">
+                    <div class="col-md-5 col-lg-3 col-xl-3 col-xxl-2">
+                        <img src="images/sjkim.jpg" class="card-img-top" alt="sjkim">
+                    </div>
+
+                    <div class="col-md-7 col-lg-9 col-xl-9 col-xxl-10">
+                        <div class="card-body">
+                            <h5 class="card-title text-h5-responsive">김 성 준 (Seongjoon Kim)</h5>
+                            <ul>
+                                <li class="card-text text-p-responsive">조선대학교 컴퓨터공학과 학사과정 (since Spring 2020)</li>
+                                <li class="card-text text-p-responsive">Office : IT융합대학 10122</li>                                
+                                <li class="card-text text-p-responsive">E-mail : k940tjdwns@chosun.ac.kr</li>
+                                <li class="card-text text-p-responsive">Research Interests : Voice Spoofing Detection</li>
+                            </ul>      
+                            
+                            
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#biosjModal">
+                                Biography
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="biosjModal" tabindex="-1" aria-labelledby="biosjModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-4" id="biosjModalLabel">Biography</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h2 class="modal-title fs-5 py-2">Education</h2>
+                                        <ul>                                            
+                                            <li class="my-1">B.S. Student in Dept. of Computer Engineering, Chosun University.</li>                                            
+                                        </ul>
+                                        <hr>
+
+                                        <h2 class="modal-title fs-5 py-2">Awards</h2>
+                                        <ul>                                            
+                                            <li class="my-1">(2024) 최우수상, SW중심대학 디지털경진대회 AI부문</li> 
+                                        </ul>
+                                    </div>                           
+                                </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div> 
+
+
+
+        <div class="container px-1 border-bottom border-2 border-dark pb-5 mb-5">
+            <h2 class="text-dark fw-bold pb-2 text-h2-responsive">Alumni</h2>            
+            
+            <!-- 신영서 -->
+            <div class="card mx-5">
+                <div class="row">
+                    <div class="col-md-5 col-lg-3 col-xl-3 col-xxl-2">
+                        <img src="images/ysshin.jpg" class="card-img-top" alt="ysshin">
+                    </div>
+
+                    <div class="col-md-7 col-lg-9 col-xl-9 col-xxl-10">
+                        <div class="card-body">
+                            <h5 class="card-title text-h5-responsive">신 영 서 (Yeongseo Shin)</h5>
+                            <ul>
+                                <li class="card-text text-p-responsive">LIG Nex1, Maritime R&D Center (since July 2023)</li>
+                                <li class="card-text text-p-responsive">조선대학교 컴퓨터공학과 석사졸업 (Aug. 2023)</li>
+                            </ul>    
+                            
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#bioysModal">
+                                Biography
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="bioysModal" tabindex="-1" aria-labelledby="bioysModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-4" id="bioysModalLabel">Biography</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h2 class="modal-title fs-5 py-2">Education</h2>
+                                        <ul>                                            
+                                            <li class="my-1">M.S. in Dept. of Computer Engineering, Chosun University, Aug. 2023.</li>
+                                            <li class="my-1">B.S. in Dept. of Computer Engineering, Chosun University, Feb. 2022.</li>
+                                        </ul>
+                                        <hr>
+
+                                        <h2 class="modal-title fs-5 py-2">Awards</h2>
+                                        <ul>
+                                            <li class="my-1">(2023) 우수논문상, 한국전자파학회 동계학술대회</li>                                            
+                                            <li class="my-1">(2021) 한밭대학교 드론 챔피언쉽 - 해커톤 분야 1위 (은상)</li> 
+                                        </ul>
+
+                                    </div>                           
+                                </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>                
+            </div>
+
+            <!-- 김강민 -->
+            <div class="card mx-5 my-5">
+                <div class="row">
+                    <div class="col-md-5 col-lg-3 col-xl-3 col-xxl-2">
+                        <img src="images/kmkim.jpg" class="card-img-top" alt="kmkim">
+                    </div>
+
+                    <div class="col-md-7 col-lg-9 col-xl-9 col-xxl-10">
+                        <div class="card-body">
+                            <h5 class="card-title text-h5-responsive">김 강 민 (Kangmin Kim)</h5>
+                            <ul>         
+                                <li class="card-text text-p-responsive">조선대학교 컴퓨터공학과 석사졸업 (Feb. 2024)</li>
+                            </ul>     
+                            
+        
+                            
+                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#biokmModal">
+                                Biography
+                            </button>
+                            
+                            
+                            <div class="modal fade" id="biokmModal" tabindex="-1" aria-labelledby="biokmModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-4" id="biokmModalLabel">Biography</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h2 class="modal-title fs-5 py-2">Education</h2>
+                                        <ul>                                            
+                                            <li class="my-1">M.S. Student in Dept. of Computer Engineering, Chosun University.</li>
+                                            <li class="my-1">B.S. in Dept. of Computer Engineering, Chosun University, Feb. 2022.</li>
+                                        </ul>
+                                        <hr>
+
+                                    </div>                           
+                                </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>                
+            </div>
+
+            <!-- 고창환 -->
+            <div class="card mx-5 mt-5">
+                <div class="row">
+                    <div class="col-md-5 col-lg-3 col-xl-3 col-xxl-2">
+                        <img src="images/chgo.jpg" class="card-img-top" alt="chgo">
+                    </div>
+
+                    <div class="col-md-7 col-lg-9 col-xl-9 col-xxl-10">
+                        <div class="card-body">
+                            <h5 class="card-title text-h5-responsive">고 창 환 (Changhwan Go)</h5>
+                            <ul>
+                                <li class="card-text text-p-responsive">조선대학교 컴퓨터공학과 석사졸업 (Aug. 2024)</li>                                
+                            </ul>   
+                            
+                            
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#biochModal">
+                                Biography
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="biochModal" tabindex="-1" aria-labelledby="biochModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-4" id="biochModalLabel">Biography</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h2 class="modal-title fs-5 py-2">Education</h2>
+                                        <ul>                                            
+                                            <li class="my-1">M.S. Student in Dept. of Computer Engineering, Chosun University.</li>
+                                            <li class="my-1">B.S. in Dept. of Computer Engineering, Chosun University, Feb. 2023.</li>
+                                        </ul>
+                                        <hr>
+
+                                        <h2 class="modal-title fs-5 py-2">Awards</h2>
+                                        <ul>
+                                            <li class="my-1">(2023) 우수논문상, 한국전자파학회 동계학술대회</li>                                            
+                                        </ul>
+
+                                    </div>                           
+                                </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div> 
+
+
+        
+    </section>
+
+
+
+
+
+    <footer class="bg-dark text-white">
+        <div class="container text-center">
+          <p class="py-4 mb-0">Copyright 2023 Designed by <a href="index" class="link-warning text-decoration-none">Advanced Multimedia Computing Lab.</a></p>
+        </div>      
+  
+      </footer>
+  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
